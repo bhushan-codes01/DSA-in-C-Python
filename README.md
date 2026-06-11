@@ -28,9 +28,7 @@ Contains:
 * Hollow Diamond Pattern
 * Butterfly Pattern
 
-## 📚 Learning Source
 
-* Apna College DSA Course
 
 ## 🎯 Goal
 
