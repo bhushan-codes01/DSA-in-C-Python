@@ -475,41 +475,41 @@ END OF NOTES
 
 
 //WAF to Print Nth Fibonacci Number
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int fibonacci(int n) {
+// int fibonacci(int n) {
 
-    if (n == 0) {
-        return 0;
-    }
+//     if (n == 0) {
+//         return 0;
+//     }
 
-    if (n == 1) {
-        return 1;
-    }
+//     if (n == 1) {
+//         return 1;
+//     }
 
-    int a = 0;
-    int b = 1;
+//     int a = 0;
+//     int b = 1;
 
-    for (int i = 2; i <= n; i++) {
+//     for (int i = 2; i <= n; i++) {
 
-        int c = a + b;
+//         int c = a + b;
 
-        a = b;
-        b = c;
-    }
+//         a = b;
+//         b = c;
+//     }
 
-    return b;
-}
+//     return b;
+// }
 
-int main() {
+// int main() {
 
-    int n;
+//     int n;
 
-    cout << "Enter n: ";
-    cin >> n;
+//     cout << "Enter n: ";
+//     cin >> n;
 
-    cout << fibonacci(n);
+//     cout << fibonacci(n);
 
-    return 0;
-}
+//     return 0;
+// }
