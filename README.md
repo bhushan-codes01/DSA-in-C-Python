@@ -28,8 +28,6 @@ Contains:
 * Hollow Diamond Pattern
 * Butterfly Pattern
 
-
-
 ## 🎯 Goal
 
 To build strong problem-solving skills and master Data Structures & Algorithms using C++.
