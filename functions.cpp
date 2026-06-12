@@ -255,13 +255,261 @@ END OF NOTES
 */
 
 
-#include<iostream>
+// // #include<iostream>
+// // using namespace std;
+// // int printhello() {
+// //  cout <<"helloworld \n";
+// //  return 3;
+// // }
+
+// // int main(){
+// //    int val = printhello();
+// //     cout<< "val =" << val << endl;
+// //     return 0 ;
+// // }
+
+// #include <iostream>
+// using namespace std;
+
+// double sum(double a, double b) {
+//     double s = a + b;
+//     return s;
+// }
+
+// // min value
+// int minvalue(int a, int b) {
+//     if (a <= b) {
+//         return a;
+//     } else {
+//         return b;
+//     }
+// }
+
+// int main() {
+//     cout << "min value = " << minvalue(10, 5) << endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// // Sum of first N numbers
+// int sumN(int n) {
+//     int sum = 0;
+
+//     for (int i = 1; i <= n; i++) {
+//         sum += i;
+//     }
+
+//     return sum;
+// }
+
+// // Factorial of N
+// int fact(int n) {
+//     int fact = 1;
+
+//     for (int j = 1; j <= n; j++) {
+//         fact *= j;
+//     }
+
+//     return fact;
+// }
+
+// int main() {
+//     cout << "Sum till 5 = " << sumN(5) << endl;
+//     cout << "Sum till 10 = " << sumN(10) << endl;
+
+//     cout << "Factorial of 5 = " << fact(5) << endl;
+//     cout << "Factorial of 6 = " << fact(6) << endl;
+
+//     return 0;
+// }
+
+//pass by value 
+// #include<iostream>
+// using namespace std;
+
+// int sum( int a , int b){
+//     return a +b ;
+
+// }
+// int main(){
+//     int x = 5 , y = 4;
+//     cout <<sum(x,y) <<endl;
+//     return 0;
+// }
+
+// sums of digit of numbers
+// #include <iostream>
+// using namespace std;
+
+// int fun(int num) {
+//     int digSum = 0;
+
+//     while (num > 0) {
+//         int lastDig = num % 10;
+//         num /= 10;
+
+//         digSum += lastDig;
+//     }
+
+//     return digSum;
+// }
+
+// int main() {
+//     cout << "sum = " << fun(1234) << endl;
+//     return 0;
+// }
+
+
+// #include <iostream>
+// using namespace std;
+
+// int factorial(int n) {
+//     int fact = 1;
+
+//     for (int i = 1; i <= n; i++) {
+//         fact *= i;
+//     }
+
+//     return fact;
+// }
+
+// int nCr(int n, int r) {
+//     int fact_n = factorial(n);
+//     int fact_r = factorial(r);
+//     int fact_n_r = factorial(n - r);
+
+//     return fact_n / (fact_r * fact_n_r);
+// }
+
+// int main() {
+//     int n, r;
+
+//     cout << "Enter n: ";
+//     cin >> n;
+
+//     cout << "Enter r: ";
+//     cin >> r;
+
+//     cout << "nCr = " << nCr(n, r) << endl;
+
+//     return 0;
+// }
+
+//1. WAF to Check if a Number is Prime
+// #include <iostream>
+// using namespace std;
+
+// bool isPrime(int n) {
+
+//     if (n < 2) {
+//         return false;
+//     }
+
+//     for (int i = 2; i < n; i++) {
+
+//         if (n % i == 0) {
+//             return false;
+//         }
+//     }
+
+//     return true;
+// }
+
+// int main() {
+
+//     int n;
+//     cout << "Enter a number: ";
+//     cin >> n;
+
+//     if (isPrime(n)) {
+//         cout << "Prime Number";
+//     } else {
+//         cout << "Not Prime";
+//     }
+
+//     return 0;
+// }
+// WAF to Print All Prime Numbers from 1 to N
+// #include <iostream>
+// using namespace std;
+
+// bool isPrime(int n) {
+
+//     if (n < 2) {
+//         return false;
+//     }
+
+//     for (int i = 2; i < n; i++) {
+
+//         if (n % i == 0) {
+//             return false;
+//         }
+//     }
+
+//     return true;
+// }
+
+// void printPrimes(int n) {
+
+//     for (int i = 2; i <= n; i++) {
+
+//         if (isPrime(i)) {
+//             cout << i << " ";
+//         }
+//     }
+// }
+
+// int main() {
+
+//     int n;
+
+//     cout << "Enter N: ";
+//     cin >> n;
+
+//     printPrimes(n);
+
+//     return 0;
+// }
+
+
+//WAF to Print Nth Fibonacci Number
+#include <iostream>
 using namespace std;
-void printhello() {
- cout <<"helloworld \n";
+
+int fibonacci(int n) {
+
+    if (n == 0) {
+        return 0;
+    }
+
+    if (n == 1) {
+        return 1;
+    }
+
+    int a = 0;
+    int b = 1;
+
+    for (int i = 2; i <= n; i++) {
+
+        int c = a + b;
+
+        a = b;
+        b = c;
+    }
+
+    return b;
 }
 
-int main(){
-    printhello();
+int main() {
+
+    int n;
+
+    cout << "Enter n: ";
+    cin >> n;
+
+    cout << fibonacci(n);
+
     return 0;
 }
